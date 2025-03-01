@@ -158,12 +158,17 @@ header {
 .intro {
     @include flex(column, center, center);
     gap: 1.5rem;
-    background-image: url('/images/bg-hero-mobile.svg');
+    background-image: url('./images/bg-hero-mobile.svg');
     background-color: $color-bg1;
     text-align: center;
     padding: 0 2.2rem;
     font-size: 0.9rem;
+
+    @media screen and (min-width: $screen-mobile) {
+        background-image: url('./images/bg-hero-desktop.svg');
+    }
     
+
     .subintro {
         @include flex(column, center, center);
         gap: 1.5rem;

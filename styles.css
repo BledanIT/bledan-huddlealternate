@@ -110,11 +110,16 @@ header .headlink:hover {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  background-image: url("/images/bg-hero-mobile.svg");
+  background-image: url("./images/bg-hero-mobile.svg");
   background-color: hsl(193, 100%, 96%);
   text-align: center;
   padding: 0 2.2rem;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 720px) {
+  .intro {
+    background-image: url("./images/bg-hero-desktop.svg");
+  }
 }
 .intro .subintro {
   display: flex;
